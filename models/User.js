@@ -29,11 +29,6 @@ var userSchema = new Schema({
 
   gender: { type: String , required: [true, 'Gender must be provided']},
 
-  calorie: { type: String },
-
-  salt: { type: String },
-
-
 });
 
 module.exports = mongoose.model('Users', userSchema);

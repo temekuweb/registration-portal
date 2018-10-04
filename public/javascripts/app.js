@@ -9,9 +9,7 @@ $(function(){
         var cpassword  = $("#cpassword").val();
         var dob        = $("#dob").val();
         var country    = $("#country").val();
-        var gender     = $('input[name="gender"]:checked').val(); 
-        var calorie    = $('input[name="calorie"]:checked').val(); 
-        var salt       = $('input[name="salt"]:checked').val();
+        var gender     = $('input[name="gender"]:checked').val();         
         var terms      = $('input[name="terms"]:checked').val();
 
         if(!fullname || !email || !password || !cpassword || !dob || !country || !gender){ 
@@ -25,7 +23,7 @@ $(function(){
             $.ajax({
                 url: "/register",
                 method: "POST",
-                data: { full_name: fullname, email: email, password: password, cpassword: cpassword, dob: dob, country: country, gender: gender, calorie:calorie ,salt: salt, terms: terms }
+                data: { full_name: fullname, email: email, password: password, cpassword: cpassword, dob: dob, country: country, gender: gender, terms: terms }
             }).done(function( data ) {
 
                 if ( data ) {

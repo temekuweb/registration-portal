@@ -73,9 +73,7 @@ const { matchedData, sanitize }   = require('express-validator/filter');
             password:    encpassword, 
             dob:         req.body.dob, 
             country:     req.body.country, 
-            gender:      req.body.gender, 
-            calorie:     req.body.calorie, 
-            salt:        req.body.salt 
+            gender:      req.body.gender 
           };
         
         var user = new User(document); 

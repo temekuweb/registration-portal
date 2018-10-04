@@ -3,7 +3,7 @@ extends layout
 block content
    .container
       
-      h2.text-center.top-buffer NodeJS User Registration Tutorial
+      h2.text-center.top-buffer Meetup User Registration
       form.form-horizontal(role="form", method="post")
         .form-group
           .alert.alert-danger(role='alert', id="msgDiv")
@@ -59,19 +59,7 @@ block content
               .col-sm-4
                 label.radio-inline
                   input#maleRadio(name="gender" type="radio" value="Male")
-                  | &nbsp;Male              
-        .form-group
-          label.control-label.col-sm-9 
-           strong Meal Preference
-          .col-sm-9
-            .checkbox
-              label
-                input#calorieCheckbox(type="checkbox" value="Calorie" name="calorie")
-                | &nbsp;Low calorie
-            .checkbox
-              label
-                input#saltCheckbox(type="checkbox" value="Salt"  name="salt")
-                | &nbsp;Low salt
+                  | &nbsp;Male       
         .form-group
           .col-sm-9.col-sm-offset-3
             .checkbox
